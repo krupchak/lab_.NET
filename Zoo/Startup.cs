@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Zoo.Models;
 using Zoo.Data;
+using Microsoft.Extensions.Options;
 
 namespace Zoo
 {
@@ -31,10 +32,10 @@ namespace Zoo
 
         public void ConfigureServices(IServiceCollection services)
         {
-           services.AddDbContext<AppDbContext>(opt => 
-                opt.UseInMemoryDatabase("InMem"));
+           services.AddDbContext<AppDbContext>(opt =>
+               opt.UseSqlServer(Configuration.GetConnectionString("SqlConnection")));
 
-           services.AddScoped<IAnimalsRepo, AnimalsRepo>();
+            services.AddScoped<IAnimalsRepo, AnimalsRepo>();
 
            services.AddControllers();
 

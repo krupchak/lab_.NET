@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "c:\\Навчання\\3_курс\\.NET\\lab_.NET\\Zoo\\obj\\Debug\\net8.0\\project.razor.json",
+  "FilePath": "c:\\Навчання\\3_курс\\.NET\\lab_.NET\\Zoo\\Zoo.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "7.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1100
+  },
+  "RootNamespace": "Zoo",
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}
